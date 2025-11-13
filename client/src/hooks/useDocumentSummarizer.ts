@@ -6,7 +6,9 @@
 import { useState, useCallback } from 'react';
 import type { SummaryResponse } from '@/types';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+const API_URL = typeof window !== 'undefined'
+    ? ''
+    : 'http://production-env.eba-zpdimf2m.us-east-1.elasticbeanstalk.com';
 
 interface UseDocumentSummarizerReturn {
   summary: SummaryResponse | null;
