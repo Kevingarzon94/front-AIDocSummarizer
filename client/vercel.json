@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "http://production-env.eba-zpdimf2m.us-east-1.elasticbeanstalk.com/api/:path*"
+    }
+  ]
+}
